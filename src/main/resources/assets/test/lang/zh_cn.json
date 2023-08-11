@@ -24,6 +24,7 @@
   "block.test.my_trapdoor": "活板门",
   "block.test.my_stairs": "楼梯",
   "block.test.my_flower": "花",
-  "block.test.my_potted_flower": "盆栽花"
+  "block.test.my_potted_flower": "盆栽花",
+  "block.test.my_lamp": "灯"
 
 }

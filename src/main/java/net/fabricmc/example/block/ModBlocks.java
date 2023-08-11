@@ -54,6 +54,10 @@ public class ModBlocks {
     public static final Block MY_POTTED_FLOWER = registerBlockWithoutBlockItem("my_potted_flower",
             new FlowerPotBlock(ModBlocks.MY_FLOWER,
                     FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()));
+    public static final Block MY_LAMP = registerBlock("my_lamp",
+            new ModLampBlock(FabricBlockSettings.of(Material.METAL)
+                    .strength(4f).requiresTool()
+                    .luminance((state) -> state.get(ModLampBlock.CLICKED)?15:0)),ModItemGroup.TEST_GROUP);
 
     public static Block registerBlock(String name,Block block,ItemGroup group){
         registerBlockItem(name,block,group);
