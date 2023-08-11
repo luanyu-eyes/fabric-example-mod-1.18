@@ -1,0 +1,13 @@
+{
+  "item.test.test_item": "测试物品",
+  "item.test.test_massage_item": "自定义物品测试",
+
+  "block.test.test_block": "测试方块",
+  "block.test.test_message_block": "自定义方块测试",
+  "block.test.my_button": "测试按钮",
+  "block.test.my_fence": "测试栅栏",
+  "block.test.my_fence_gate":"测试栅栏门",
+  "block.test.my_wall": "测试墙",
+  "block.test.my_pressure": "测试压力板"
+
+}
