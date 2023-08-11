@@ -6,6 +6,7 @@ import net.fabricmc.example.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -46,6 +47,10 @@ public class ModBlocks {
     public static final Block MY_TRAPDOOR = registerBlock("my_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3.0f)
                     .requiresTool().nonOpaque()), ModItemGroup.TEST_GROUP);
+    public static final Block MY_FLOWER = registerBlock("my_flower",
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE,12,
+                    FabricBlockSettings.of(Material.WOOD).strength(4f)
+                            .noCollision().nonOpaque()),ModItemGroup.TEST_GROUP);
 
     public static Block registerBlock(String name,Block block,ItemGroup group){
         registerBlockItem(name,block,group);

@@ -29,16 +29,16 @@ public class ModItems {
             new ModPickAxeItem(ModToolMaterials.TEST, 2, 0f,
                     new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
     public static final Item MY_HELMET = registerItem("my_helmet",
-            new ArmorItem(ModArmorMaterials.TEST, EquipmentSlot.HEAD,
+            new ModArmorItem(ModArmorMaterials.TEST, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
     public static final Item MY_CHESTPLATE= registerItem("my_chestplate",
-            new ArmorItem(ModArmorMaterials.TEST, EquipmentSlot.CHEST,
+            new ModArmorItem(ModArmorMaterials.TEST, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
     public static final Item MY_LEGGINGS = registerItem("my_leggings",
-            new ArmorItem(ModArmorMaterials.TEST, EquipmentSlot.LEGS,
+            new ModArmorItem(ModArmorMaterials.TEST, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
     public static final Item MY_BOOTS = registerItem("my_boots",
-            new ArmorItem(ModArmorMaterials.TEST, EquipmentSlot.FEET,
+            new ModArmorItem(ModArmorMaterials.TEST, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
 
     public static Item registerItem(String name, Item item){

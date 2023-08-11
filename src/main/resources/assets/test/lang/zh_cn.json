@@ -21,6 +21,7 @@
   "block.test.my_slab": "半砖",
   "block.test.my_door": "门",
   "block.test.my_trapdoor": "活板门",
-  "block.test.my_stairs": "楼梯"
+  "block.test.my_stairs": "楼梯",
+  "block.test.my_flower": "花"
 
 }
