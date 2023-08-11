@@ -49,11 +49,18 @@ public class ModBlocks {
                     .requiresTool().nonOpaque()), ModItemGroup.TEST_GROUP);
     public static final Block MY_FLOWER = registerBlock("my_flower",
             new FlowerBlock(StatusEffects.FIRE_RESISTANCE,12,
-                    FabricBlockSettings.of(Material.WOOD).strength(4f)
+                    FabricBlockSettings.copy(Blocks.DANDELION).strength(4f)
                             .noCollision().nonOpaque()),ModItemGroup.TEST_GROUP);
+    public static final Block MY_POTTED_FLOWER = registerBlockWithoutBlockItem("my_potted_flower",
+            new FlowerPotBlock(ModBlocks.MY_FLOWER,
+                    FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()));
 
     public static Block registerBlock(String name,Block block,ItemGroup group){
         registerBlockItem(name,block,group);
+        return Registry.register(Registry.BLOCK,new Identifier(ExampleMod.MOD_ID,name),
+                block);
+    }
+    public static Block registerBlockWithoutBlockItem(String name,Block block){
         return Registry.register(Registry.BLOCK,new Identifier(ExampleMod.MOD_ID,name),
                 block);
     }
