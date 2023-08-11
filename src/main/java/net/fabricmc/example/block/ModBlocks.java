@@ -44,7 +44,7 @@ public class ModBlocks {
             new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3.0f)
                     .requiresTool().nonOpaque()), ModItemGroup.TEST_GROUP);
     public static final Block MY_TRAPDOOR = registerBlock("my_trapdoor",
-            new ModTrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f)
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3.0f)
                     .requiresTool().nonOpaque()), ModItemGroup.TEST_GROUP);
 
     public static Block registerBlock(String name,Block block,ItemGroup group){

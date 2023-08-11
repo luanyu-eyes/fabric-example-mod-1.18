@@ -1,6 +1,11 @@
 {
   "item.test.test_item": "测试物品",
   "item.test.test_massage_item": "自定义物品测试",
+  "item.test.my_hoe": "锄头",
+  "item.test.my_axe": "斧子",
+  "item.test.my_pickaxe": "镐子",
+  "item.test.my_sword": "剑",
+  "item.test.my_shovel": "铲子",
 
   "block.test.test_block": "测试方块",
   "block.test.test_message_block": "自定义方块测试",
