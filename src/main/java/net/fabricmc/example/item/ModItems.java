@@ -40,6 +40,8 @@ public class ModItems {
     public static final Item MY_BOOTS = registerItem("my_boots",
             new ModArmorItem(ModArmorMaterials.TEST, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
+    public static final Item MY_ANIMATED_ITEM = registerItem("my_animated_item",
+            new Item(new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
 
     public static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM,new Identifier(ExampleMod.MOD_ID, name), item);
