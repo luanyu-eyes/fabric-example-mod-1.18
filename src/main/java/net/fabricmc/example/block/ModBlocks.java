@@ -1,9 +1,7 @@
 package net.fabricmc.example.block;
 
 import net.fabricmc.example.ExampleMod;
-import net.fabricmc.example.block.custom.ModPressurePlateBlock;
-import net.fabricmc.example.block.custom.ModStoneButtonBlock;
-import net.fabricmc.example.block.custom.TestBlock;
+import net.fabricmc.example.block.custom.*;
 import net.fabricmc.example.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -35,6 +33,19 @@ public class ModBlocks {
     public static final Block MY_WALL = registerBlock("my_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f)
                     .requiresTool()), ModItemGroup.TEST_GROUP);
+    public static final Block MY_SLAB = registerBlock("my_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f)
+                    .requiresTool()), ModItemGroup.TEST_GROUP);
+    public static final Block MY_STAIRS = registerBlock("my_stairs",
+            new ModStairsBlock(ModBlocks.TEST_BLOCK.getDefaultState(),
+                    FabricBlockSettings.of(Material.METAL).strength(3.0f)
+                    .requiresTool()), ModItemGroup.TEST_GROUP);
+    public static final Block MY_DOOR = registerBlock("my_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3.0f)
+                    .requiresTool().nonOpaque()), ModItemGroup.TEST_GROUP);
+    public static final Block MY_TRAPDOOR = registerBlock("my_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f)
+                    .requiresTool().nonOpaque()), ModItemGroup.TEST_GROUP);
 
     public static Block registerBlock(String name,Block block,ItemGroup group){
         registerBlockItem(name,block,group);

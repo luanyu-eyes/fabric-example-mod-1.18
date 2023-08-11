@@ -1,4 +1,9 @@
 package net.fabricmc.example.block.custom;
 
-public class ModTrapdoorBlock {
+import net.minecraft.block.TrapdoorBlock;
+
+public class ModTrapdoorBlock extends TrapdoorBlock {
+    public ModTrapdoorBlock(Settings settings) {
+        super(settings);
+    }
 }

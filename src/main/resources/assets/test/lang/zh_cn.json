@@ -8,6 +8,10 @@
   "block.test.my_fence": "测试栅栏",
   "block.test.my_fence_gate":"测试栅栏门",
   "block.test.my_wall": "测试墙",
-  "block.test.my_pressure": "测试压力板"
+  "block.test.my_pressure": "测试压力板",
+  "block.test.my_slab": "半砖",
+  "block.test.my_door": "门",
+  "block.test.my_trapdoor": "活板门",
+  "block.test.my_stairs": "楼梯"
 
 }
