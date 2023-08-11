@@ -3,6 +3,7 @@ package net.fabricmc.example;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.example.block.ModBlocks;
 import net.fabricmc.example.item.ModItems;
+import net.fabricmc.example.painting.ModPaintings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,5 +23,6 @@ public class ExampleMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModPaintings.registerPaintings();
 	}
 }
