@@ -1,6 +1,7 @@
 package net.fabricmc.example.block;
 
 import net.fabricmc.example.ExampleMod;
+import net.fabricmc.example.Sound.ModSounds;
 import net.fabricmc.example.block.custom.*;
 import net.fabricmc.example.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -56,7 +57,7 @@ public class ModBlocks {
                     FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()));
     public static final Block MY_LAMP = registerBlock("my_lamp",
             new ModLampBlock(FabricBlockSettings.of(Material.METAL)
-                    .strength(4f).requiresTool()
+                    .strength(4f).requiresTool().sounds(ModSounds.MY_SOUNDS)
                     .luminance((state) -> state.get(ModLampBlock.CLICKED)?15:0)),ModItemGroup.TEST_GROUP);
     public static final Block MY_WINDOW = registerBlock("my_window",
             new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(3f)

@@ -1,0 +1,38 @@
+{
+  "dowsing_rod_found_ore": {
+    "subtitle": "test:dowsing_rod_found_ore",
+    "sounds": [
+      "test:dowsing_rod_found_ore"
+    ]
+  },
+  "my_lamp_break": {
+    "subtitle": "test:my_lamp_break",
+    "sounds": [
+      "test:my_lamp_break"
+    ]
+  },
+  "my_lamp_step": {
+    "subtitle": "test:my_lamp_step",
+    "sounds": [
+      "test:my_lamp_step"
+    ]
+  },
+  "my_lamp_place": {
+    "subtitle": "test:my_lamp_place",
+    "sounds": [
+      "test:my_lamp_place"
+    ]
+  },
+  "my_lamp_hit": {
+    "subtitle": "test:my_lamp_hit",
+    "sounds": [
+      "test:my_lamp_hit"
+    ]
+  },
+  "my_lamp_fall": {
+    "subtitle": "test:my_lamp_fall",
+    "sounds": [
+      "test:my_lamp_fall"
+    ]
+  }
+}

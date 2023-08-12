@@ -29,5 +29,12 @@
   "block.test.my_potted_flower": "盆栽花",
   "block.test.my_lamp": "灯",
   "block.test.my_window": "玻璃",
-  "block.test.grape_vine": "测试作物"
+  "block.test.grape_vine": "测试作物",
+
+  "test:dowsing_rod_found_ore": "发现矿物",
+  "test:my_lamp_break": "打破方块",
+  "test:my_lamp_step": "踩过方块",
+  "test:my_lamp_fall": "方块下落",
+  "test:my_lamp_hit": "击打方块",
+  "test:my_lamp_place": "放置方块"
 }
