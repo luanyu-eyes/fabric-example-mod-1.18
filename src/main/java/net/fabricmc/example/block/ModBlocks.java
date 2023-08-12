@@ -58,6 +58,9 @@ public class ModBlocks {
             new ModLampBlock(FabricBlockSettings.of(Material.METAL)
                     .strength(4f).requiresTool()
                     .luminance((state) -> state.get(ModLampBlock.CLICKED)?15:0)),ModItemGroup.TEST_GROUP);
+    public static final Block MY_WINDOW = registerBlock("my_window",
+            new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(3f)
+                            .nonOpaque()),ModItemGroup.TEST_GROUP);
 
     public static Block registerBlock(String name,Block block,ItemGroup group){
         registerBlockItem(name,block,group);
