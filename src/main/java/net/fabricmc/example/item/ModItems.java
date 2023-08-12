@@ -45,6 +45,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
     public static final Item GRAPE_SEED = registerItem("grape_seed",
             new AliasedBlockItem(ModBlocks.GRAPE_VINE,new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
+    public static final Item MY_BOW = registerItem("my_bow",
+            new BowItem(new FabricItemSettings().group(ModItemGroup.TEST_GROUP).maxDamage(1024)));
 
     public static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM,new Identifier(ExampleMod.MOD_ID, name), item);

@@ -12,6 +12,7 @@
   "item.test.my_boots": "靴子",
   "item.test.my_animated_item": "动画物品",
   "item.test.grape_seed": "种子",
+  "item.test.my_bow": "弓",
 
   "block.test.test_block": "测试方块",
   "block.test.test_message_block": "自定义方块测试",
