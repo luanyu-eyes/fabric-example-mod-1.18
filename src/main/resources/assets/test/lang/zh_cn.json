@@ -11,6 +11,7 @@
   "item.test.my_leggings": "腿甲",
   "item.test.my_boots": "靴子",
   "item.test.my_animated_item": "动画物品",
+  "item.test.grape_seed": "种子",
 
   "block.test.test_block": "测试方块",
   "block.test.test_message_block": "自定义方块测试",
@@ -26,6 +27,6 @@
   "block.test.my_flower": "花",
   "block.test.my_potted_flower": "盆栽花",
   "block.test.my_lamp": "灯",
-  "block.test.my_window": "玻璃"
-
+  "block.test.my_window": "玻璃",
+  "block.test.grape_vine": "测试作物"
 }

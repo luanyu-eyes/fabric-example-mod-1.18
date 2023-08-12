@@ -15,5 +15,6 @@ public class ExampleClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MY_POTTED_FLOWER,RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MY_WINDOW,RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GRAPE_VINE,RenderLayer.getCutout());
     }
 }

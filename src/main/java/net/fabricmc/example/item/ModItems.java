@@ -1,6 +1,7 @@
 package net.fabricmc.example.item;
 
 import net.fabricmc.example.ExampleMod;
+import net.fabricmc.example.block.ModBlocks;
 import net.fabricmc.example.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
@@ -42,6 +43,8 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
     public static final Item MY_ANIMATED_ITEM = registerItem("my_animated_item",
             new Item(new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
+    public static final Item GRAPE_SEED = registerItem("grape_seed",
+            new AliasedBlockItem(ModBlocks.GRAPE_VINE,new FabricItemSettings().group(ModItemGroup.TEST_GROUP)));
 
     public static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM,new Identifier(ExampleMod.MOD_ID, name), item);

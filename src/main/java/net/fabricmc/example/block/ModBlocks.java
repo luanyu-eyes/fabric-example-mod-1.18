@@ -61,6 +61,8 @@ public class ModBlocks {
     public static final Block MY_WINDOW = registerBlock("my_window",
             new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(3f)
                             .nonOpaque()),ModItemGroup.TEST_GROUP);
+    public static final Block GRAPE_VINE = registerBlockWithoutBlockItem("grape_vine",
+            new GrapeVineBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
 
     public static Block registerBlock(String name,Block block,ItemGroup group){
         registerBlockItem(name,block,group);
